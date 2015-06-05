@@ -9,18 +9,16 @@
 /* Begin PBXBuildFile section */
 		537B840B1B1F10A50005E416 /* lib_login.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 537B840A1B1F10A50005E416 /* lib_login.h */; };
 		537B840D1B1F10A50005E416 /* lib_login.m in Sources */ = {isa = PBXBuildFile; fileRef = 537B840C1B1F10A50005E416 /* lib_login.m */; };
-		537B84131B1F10A50005E416 /* liblib_login.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 537B84071B1F10A50005E416 /* liblib_login.a */; };
+		537B84221B1F10C50005E416 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537B84211B1F10C50005E416 /* Security.framework */; };
+		537B84291B1F10FE0005E416 /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 537B84241B1F10FE0005E416 /* SFHFKeychainUtils.m */; };
+		537B842A1B1F10FE0005E416 /* UserPass.m in Sources */ = {isa = PBXBuildFile; fileRef = 537B84261B1F10FE0005E416 /* UserPass.m */; };
+		537B842E1B1F11830005E416 /* lib_login.h in Headers */ = {isa = PBXBuildFile; fileRef = 537B840A1B1F10A50005E416 /* lib_login.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537B84301B1F119C0005E416 /* lib_login.m in Headers */ = {isa = PBXBuildFile; fileRef = 537B840C1B1F10A50005E416 /* lib_login.m */; };
+		537B84321B1F11B10005E416 /* UserPass.m in Headers */ = {isa = PBXBuildFile; fileRef = 537B84261B1F10FE0005E416 /* UserPass.m */; };
+		537B84331B1F11B40005E416 /* SFHFKeychainUtils.m in Headers */ = {isa = PBXBuildFile; fileRef = 537B84241B1F10FE0005E416 /* SFHFKeychainUtils.m */; };
+		537B84341B1F11B70005E416 /* SFHFKeychainUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 537B84231B1F10FE0005E416 /* SFHFKeychainUtils.h */; };
+		537B84601B1F16AC0005E416 /* UserPass.h in Headers */ = {isa = PBXBuildFile; fileRef = 537B84251B1F10FE0005E416 /* UserPass.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		537B84141B1F10A50005E416 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 537B83FF1B1F10A50005E416 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 537B84061B1F10A50005E416;
-			remoteInfo = lib_login;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		537B84051B1F10A50005E416 /* CopyFiles */ = {
@@ -39,8 +37,11 @@
 		537B84071B1F10A50005E416 /* liblib_login.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblib_login.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		537B840A1B1F10A50005E416 /* lib_login.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lib_login.h; sourceTree = "<group>"; };
 		537B840C1B1F10A50005E416 /* lib_login.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lib_login.m; sourceTree = "<group>"; };
-		537B84121B1F10A50005E416 /* lib_loginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lib_loginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		537B84181B1F10A50005E416 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		537B84211B1F10C50005E416 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		537B84231B1F10FE0005E416 /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHFKeychainUtils.h; sourceTree = "<group>"; };
+		537B84241B1F10FE0005E416 /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHFKeychainUtils.m; sourceTree = "<group>"; };
+		537B84251B1F10FE0005E416 /* UserPass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserPass.h; sourceTree = "<group>"; };
+		537B84261B1F10FE0005E416 /* UserPass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserPass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,14 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		537B840F1B1F10A50005E416 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				537B84131B1F10A50005E416 /* liblib_login.a in Frameworks */,
+				537B84221B1F10C50005E416 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,8 +59,8 @@
 		537B83FE1B1F10A50005E416 = {
 			isa = PBXGroup;
 			children = (
+				537B84211B1F10C50005E416 /* Security.framework */,
 				537B84091B1F10A50005E416 /* lib_login */,
-				537B84161B1F10A50005E416 /* lib_loginTests */,
 				537B84081B1F10A50005E416 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,7 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				537B84071B1F10A50005E416 /* liblib_login.a */,
-				537B84121B1F10A50005E416 /* lib_loginTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,29 +76,33 @@
 		537B84091B1F10A50005E416 /* lib_login */ = {
 			isa = PBXGroup;
 			children = (
+				537B84231B1F10FE0005E416 /* SFHFKeychainUtils.h */,
+				537B84241B1F10FE0005E416 /* SFHFKeychainUtils.m */,
+				537B84251B1F10FE0005E416 /* UserPass.h */,
+				537B84261B1F10FE0005E416 /* UserPass.m */,
 				537B840A1B1F10A50005E416 /* lib_login.h */,
 				537B840C1B1F10A50005E416 /* lib_login.m */,
 			);
 			path = lib_login;
 			sourceTree = "<group>";
 		};
-		537B84161B1F10A50005E416 /* lib_loginTests */ = {
-			isa = PBXGroup;
-			children = (
-				537B84171B1F10A50005E416 /* Supporting Files */,
-			);
-			path = lib_loginTests;
-			sourceTree = "<group>";
-		};
-		537B84171B1F10A50005E416 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				537B84181B1F10A50005E416 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		537B842D1B1F117B0005E416 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				537B842E1B1F11830005E416 /* lib_login.h in Headers */,
+				537B84601B1F16AC0005E416 /* UserPass.h in Headers */,
+				537B84301B1F119C0005E416 /* lib_login.m in Headers */,
+				537B84321B1F11B10005E416 /* UserPass.m in Headers */,
+				537B84331B1F11B40005E416 /* SFHFKeychainUtils.m in Headers */,
+				537B84341B1F11B70005E416 /* SFHFKeychainUtils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		537B84061B1F10A50005E416 /* lib_login */ = {
@@ -115,6 +112,8 @@
 				537B84031B1F10A50005E416 /* Sources */,
 				537B84041B1F10A50005E416 /* Frameworks */,
 				537B84051B1F10A50005E416 /* CopyFiles */,
+				537B842C1B1F114E0005E416 /* Resources */,
+				537B842D1B1F117B0005E416 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -124,24 +123,6 @@
 			productName = lib_login;
 			productReference = 537B84071B1F10A50005E416 /* liblib_login.a */;
 			productType = "com.apple.product-type.library.static";
-		};
-		537B84111B1F10A50005E416 /* lib_loginTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 537B841E1B1F10A50005E416 /* Build configuration list for PBXNativeTarget "lib_loginTests" */;
-			buildPhases = (
-				537B840E1B1F10A50005E416 /* Sources */,
-				537B840F1B1F10A50005E416 /* Frameworks */,
-				537B84101B1F10A50005E416 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				537B84151B1F10A50005E416 /* PBXTargetDependency */,
-			);
-			name = lib_loginTests;
-			productName = lib_loginTests;
-			productReference = 537B84121B1F10A50005E416 /* lib_loginTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -153,9 +134,6 @@
 				ORGANIZATIONNAME = "Rafael Calvillo Sanchez";
 				TargetAttributes = {
 					537B84061B1F10A50005E416 = {
-						CreatedOnToolsVersion = 6.3.2;
-					};
-					537B84111B1F10A50005E416 = {
 						CreatedOnToolsVersion = 6.3.2;
 					};
 				};
@@ -173,13 +151,12 @@
 			projectRoot = "";
 			targets = (
 				537B84061B1F10A50005E416 /* lib_login */,
-				537B84111B1F10A50005E416 /* lib_loginTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		537B84101B1F10A50005E416 /* Resources */ = {
+		537B842C1B1F114E0005E416 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -193,26 +170,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				537B842A1B1F10FE0005E416 /* UserPass.m in Sources */,
+				537B84291B1F10FE0005E416 /* SFHFKeychainUtils.m in Sources */,
 				537B840D1B1F10A50005E416 /* lib_login.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		537B840E1B1F10A50005E416 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		537B84151B1F10A50005E416 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 537B84061B1F10A50005E416 /* lib_login */;
-			targetProxy = 537B84141B1F10A50005E416 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		537B84191B1F10A50005E416 /* Debug */ = {
@@ -298,7 +262,9 @@
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
 			};
 			name = Debug;
 		};
@@ -307,39 +273,9 @@
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		537B841F1B1F10A50005E416 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = lib_loginTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		537B84201B1F10A50005E416 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = lib_loginTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_STYLE = "non-global";
 			};
 			name = Release;
 		};
@@ -362,14 +298,7 @@
 				537B841D1B1F10A50005E416 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		537B841E1B1F10A50005E416 /* Build configuration list for PBXNativeTarget "lib_loginTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				537B841F1B1F10A50005E416 /* Debug */,
-				537B84201B1F10A50005E416 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
